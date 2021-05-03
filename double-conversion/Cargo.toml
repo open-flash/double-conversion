@@ -1,0 +1,8 @@
+[package]
+name = "double-conversion"
+version = "0.1.0"
+authors = ["Charles Samborski <demurgos@demurgos.net>"]
+edition = "2018"
+
+[dependencies]
+double-conversion-sys = "0.1.0"

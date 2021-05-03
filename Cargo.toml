@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "double-conversion",
+    "double-conversion-sys",
+]
+
+[patch.crates-io]
+double-conversion-sys = { path = "./double-conversion-sys" }

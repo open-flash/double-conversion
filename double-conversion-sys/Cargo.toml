@@ -1,0 +1,11 @@
+[package]
+name = "double-conversion-sys"
+version = "0.1.0"
+authors = ["Charles Samborski <demurgos@demurgos.net>"]
+edition = "2018"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.58.1"
+cmake = "0.1.45"
