@@ -52,5 +52,13 @@ mod tests {
     assert_eq!(b.format(f64::NAN), "NaN");
     assert_eq!(b.format(f64::INFINITY), "Infinity");
     assert_eq!(b.format(f64::NEG_INFINITY), "-Infinity");
+    assert_eq!(b.format(to_f64(0x84ba6d321a08ee10)), "-6.941998689674754e-286");
+    assert_eq!(b.format(to_f64(0x84ba6d321a08ee11)), "-6.9419986896747545e-286");
+    assert_eq!(b.format(to_f64(0x84ba6d321a08ee12)), "-6.941998689674755e-286");
+  }
+
+  fn to_f64(x: u64) -> f64 {
+    let bytes = x.to_be_bytes();
+    f64::from_be_bytes(bytes)
   }
 }
