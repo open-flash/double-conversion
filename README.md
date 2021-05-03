@@ -1,6 +1,6 @@
 # Rust bindings for double-conversion
 
-Rust bindings [google/double-conversion](https://github.com/google/double-conversion).
+Rust bindings for [google/double-conversion](https://github.com/google/double-conversion).
 
 This is the library used by the SpiderMonkey (Firefox) JavaScript engine
 to convert numbers to strings.
