@@ -30,7 +30,7 @@ impl Buffer {
       };
       let converter = double_conversion_DoubleToStringConverter_EcmaScriptConverter();
       let is_success = double_conversion_DoubleToStringConverter_ToShortest(converter, v, (&mut builder) as *mut _);
-      debug_assert!(is_success);
+      assert!(is_success);
       builder.position_
     };
     let s = &self.bytes[0..(len as usize)];

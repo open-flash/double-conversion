@@ -3,6 +3,11 @@ name = "double-conversion"
 version = "0.1.0"
 authors = ["Charles Samborski <demurgos@demurgos.net>"]
 edition = "2018"
+description = "Bindings for `double-conversion`"
+repository = "https://github.com/open-flash/double-conversion"
+readme = "./README.md"
+keywords = ["float", "format", "javascript", "ecmascript", "ryu"]
+license = "BSD-3-Clause"
 
 [dependencies]
 double-conversion-sys = "0.1.0"
